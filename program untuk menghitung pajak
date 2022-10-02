@@ -1,0 +1,42 @@
+// program untuk menghitung pajak
+#include <iostream>
+using namespace std;
+int main()
+{
+    int x,y;
+    cout << "masukkan gaji anda dalam setahun = ";
+    cin>>x;
+    
+    if (x<=60000000)
+    {
+        y=x*0.05;
+        cout<< "pajak anda adalah ";
+        cout<<y;
+    }
+    else if (x>60000000&&x<=250000000)
+    {
+        y=x*0.15;
+        cout<<"pajak anda adalah ";
+        cout<<y;
+    }
+    else if (x>250000000&&x<500000000)
+    {
+        y=x*0.25;
+        cout<<"pajak anda adalah ";
+        cout<<y;
+    }
+    else if (x>500000000&&x<5000000000)
+    {
+        y=x*0.3;
+        cout<<"pajak anda adalah ";
+        cout<<y;
+    }
+    else 
+    {
+        y=x*0.35;
+        cout<<"pajak anda adalah ";
+        cout<<y;
+    }
+
+    return 0;
+}
